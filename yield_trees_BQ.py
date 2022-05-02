@@ -55,7 +55,7 @@ for xl in xlFiles:
 	print(xl)
 	yield_tree_raw_data = pd.read_excel(xl)
 
-	species = 'lamb'
+	species = cnst.SPECIES
 	abattoir_name = d[xl]
 	columns = ['species','abattoir','level','parent_product_code','product_name','product_code','meat','primary_drop', 'yield', 'rank_a', 'rank_b', 'rank_c']
 	rank_1 = 0
